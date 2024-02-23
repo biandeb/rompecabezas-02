@@ -4,6 +4,7 @@ import HomeView from "./views/HomeView";
 
 import Navbar from "./components/commons/Navbar";
 import Footer from "./components/commons/Footer";
+import Error404 from "./views/Error404";
 
 import './Router.css'
 
@@ -15,6 +16,7 @@ const Router = () => {
     <main>
     <Routes>
       <Route exact path='/' element={<HomeView />} />
+      <Route path='*' element={<Error404 />} />
     </Routes>
     </main>
     <Footer />
