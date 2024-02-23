@@ -13,7 +13,7 @@ const Router = () => {
   return (
     <BrowserRouter>
     <Navbar />
-    <main>
+    <main className="container py-5">
     <Routes>
       <Route exact path='/' element={<HomeView />} />
       <Route path='*' element={<Error404 />} />
